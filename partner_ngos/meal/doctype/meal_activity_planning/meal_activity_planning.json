@@ -1,0 +1,112 @@
+{
+ "autoname": "field:activity_planning_name",
+ "creation": "2020-07-03 09:12:16.084121",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_planning_name",
+  "project",
+  "project_name",
+  "project_type",
+  "column_break_5",
+  "expected_start_date",
+  "expected_end_date",
+  "meal_activity_planning_details_section",
+  "meal_activity_planning",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_planning_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity Planning Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_type",
+   "fieldname": "project_type",
+   "fieldtype": "Data",
+   "label": "Project Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.expected_start_date",
+   "fieldname": "expected_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.expected_end_date",
+   "fieldname": "expected_end_date",
+   "fieldtype": "Data",
+   "label": "Expected End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "meal_activity_planning_details_section",
+   "fieldtype": "Section Break",
+   "label": "MEAL Activity Planning Details"
+  },
+  {
+   "fieldname": "meal_activity_planning",
+   "fieldtype": "Table",
+   "label": "MEAL Activity Planning",
+   "options": "MEAL Activity Planning Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "MEAL Activity Planning",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-07-03 09:12:16.084121",
+ "modified_by": "Administrator",
+ "module": "MEAL",
+ "name": "MEAL Activity Planning",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

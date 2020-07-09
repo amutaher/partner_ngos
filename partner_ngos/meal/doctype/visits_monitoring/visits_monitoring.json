@@ -1,0 +1,185 @@
+{
+ "autoname": "field:monitoring_visit_report",
+ "creation": "2020-06-22 15:38:04.532362",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "project_name",
+  "project_type",
+  "column_break_4",
+  "meal_activity_planning",
+  "expected_start_date",
+  "expected_end_date",
+  "monitoring_visit_report_details_section",
+  "monitoring_visit_report",
+  "completed_by",
+  "location",
+  "column_break_12",
+  "date",
+  "objectives",
+  "agenda_details_section",
+  "agenda",
+  "specific_issues_actions_details_section",
+  "specific_issues__actions",
+  "section_break_19",
+  "recommendation",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_type",
+   "fieldname": "project_type",
+   "fieldtype": "Data",
+   "label": "Project Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.expected_start_date",
+   "fieldname": "expected_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.expected_end_date",
+   "fieldname": "expected_end_date",
+   "fieldtype": "Data",
+   "label": "Expected End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "meal_activity_planning",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MEAL Activity Planning",
+   "options": "MEAL Activity Planning"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "monitoring_visit_report_details_section",
+   "fieldtype": "Section Break",
+   "label": "Monitoring Visit Report Details"
+  },
+  {
+   "fieldname": "monitoring_visit_report",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Monitoring Visit Report",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "completed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Completed by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "objectives",
+   "fieldtype": "Small Text",
+   "label": "Objectives"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "agenda_details_section",
+   "fieldtype": "Section Break",
+   "label": "Agenda Details"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Table",
+   "label": "Agenda",
+   "options": "Agenda"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "specific_issues_actions_details_section",
+   "fieldtype": "Section Break",
+   "label": "Specific Issues & Actions Details"
+  },
+  {
+   "fieldname": "specific_issues__actions",
+   "fieldtype": "Table",
+   "label": "Specific Issues  & Actions",
+   "options": "Specific Issues and Actions"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recommendation",
+   "fieldtype": "Text Editor",
+   "label": "Recommendation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visits Monitoring",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-07-03 12:52:21.887728",
+ "modified_by": "Administrator",
+ "module": "MEAL",
+ "name": "Visits Monitoring",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

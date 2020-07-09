@@ -1,0 +1,103 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-22 14:44:14.652964",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project_proposal",
+  "column_break_3",
+  "program",
+  "section_break_5",
+  "project_objectives",
+  "section_break_7",
+  "outcomes",
+  "last_outcome_no",
+  "last_budget_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "LF-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "project_proposal",
+   "fieldtype": "Link",
+   "label": "Project Proposal",
+   "options": "Project Proposal"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Programs"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_objectives",
+   "fieldtype": "Text Editor",
+   "label": "Project Objectives"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Outcomes Details"
+  },
+  {
+   "fieldname": "outcomes",
+   "fieldtype": "Table",
+   "label": "Outcomes",
+   "options": "Outcomes Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "last_outcome_no",
+   "fieldtype": "Int",
+   "label": "last_outcome_no",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "last_budget_no",
+   "fieldtype": "Int",
+   "label": "last_budget_no",
+   "no_copy": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-07-04 00:55:01.328253",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Logical Framework",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

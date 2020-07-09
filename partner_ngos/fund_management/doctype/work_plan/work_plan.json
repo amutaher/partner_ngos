@@ -1,0 +1,66 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-22 14:48:18.887699",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "logical_framework",
+  "get_activity",
+  "section_break_3",
+  "work_plan_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "logical_framework",
+   "fieldtype": "Link",
+   "label": "Logical Framework",
+   "options": "Logical Framework"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_plan_details",
+   "fieldtype": "Table",
+   "label": "Work Plan Details",
+   "options": "Work Plan Details"
+  },
+  {
+   "fieldname": "get_activity",
+   "fieldtype": "Button",
+   "label": "Get Activity"
+  }
+ ],
+ "modified": "2020-06-26 22:38:55.989647",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Work Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

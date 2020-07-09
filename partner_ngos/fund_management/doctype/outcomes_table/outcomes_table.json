@@ -1,0 +1,52 @@
+{
+ "creation": "2020-06-25 13:19:11.177240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "outcome_no",
+  "outcome_id",
+  "column_break_2",
+  "outcome"
+ ],
+ "fields": [
+  {
+   "fieldname": "outcome_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Outcome Id",
+   "options": "Outcomes"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "outcome_id.outcome",
+   "fieldname": "outcome",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Outcome"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "outcome_id.outcome_no",
+   "fieldname": "outcome_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Outcome No",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-04 01:39:52.586227",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Outcomes Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

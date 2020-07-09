@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include partner_ngos *.css
+recursive-include partner_ngos *.csv
+recursive-include partner_ngos *.html
+recursive-include partner_ngos *.ico
+recursive-include partner_ngos *.js
+recursive-include partner_ngos *.json
+recursive-include partner_ngos *.md
+recursive-include partner_ngos *.png
+recursive-include partner_ngos *.py
+recursive-include partner_ngos *.svg
+recursive-include partner_ngos *.txt
+recursive-exclude partner_ngos *.pyc

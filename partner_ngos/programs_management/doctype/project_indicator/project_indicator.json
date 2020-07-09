@@ -1,0 +1,307 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-27 13:31:40.609308",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "naming_series",
+  "indicator_detail",
+  "indicators",
+  "indicator",
+  "indicator_no",
+  "section_break_3",
+  "project",
+  "section_break_5",
+  "category",
+  "column_break_2",
+  "governorate",
+  "column_break_4",
+  "district",
+  "column_break_6",
+  "age",
+  "section_break_8",
+  "men",
+  "men_",
+  "column_break_10",
+  "women",
+  "women_",
+  "column_break_12",
+  "boys",
+  "boys_",
+  "column_break_14",
+  "girls",
+  "girls_",
+  "column_break_16",
+  "unclassified",
+  "unclassified_",
+  "column_break_18",
+  "total",
+  "total_",
+  "percent",
+  "section_break_20",
+  "verification_method",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "indicator_detail",
+   "fieldtype": "Link",
+   "label": "Indicator Detail",
+   "options": "Indicator Detail"
+  },
+  {
+   "fetch_from": "indicator_detail.category",
+   "fetch_if_empty": 1,
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Beneficiaries Category"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "indicator_detail.governorate",
+   "fetch_if_empty": 1,
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "indicator_detail.district",
+   "fetch_if_empty": 1,
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "indicator_detail.age",
+   "fetch_if_empty": 1,
+   "fieldname": "age",
+   "fieldtype": "Link",
+   "label": "Age",
+   "options": "Age"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "indicator_detail.men",
+   "fetch_if_empty": 1,
+   "fieldname": "men",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Men"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "indicator_detail.women",
+   "fetch_if_empty": 1,
+   "fieldname": "women",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Women"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "indicator_detail.boys",
+   "fetch_if_empty": 1,
+   "fieldname": "boys",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Boys"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "indicator_detail.girls",
+   "fetch_if_empty": 1,
+   "fieldname": "girls",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Girls"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "indicator_detail.unclassified",
+   "fetch_if_empty": 1,
+   "fieldname": "unclassified",
+   "fieldtype": "Int",
+   "label": "Unclassified"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "indicator_detail.total",
+   "fetch_if_empty": 1,
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "indicator_detail.verification_method",
+   "fetch_if_empty": 1,
+   "fieldname": "verification_method",
+   "fieldtype": "Small Text",
+   "label": "Means of Verification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Indicator",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "indicator_detail.parent",
+   "fetch_if_empty": 1,
+   "fieldname": "indicators",
+   "fieldtype": "Link",
+   "label": "Indicators",
+   "options": "Indicators",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "indicators.indicator",
+   "fetch_if_empty": 1,
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Indicator"
+  },
+  {
+   "fetch_from": "indicators.indicator_no",
+   "fetch_if_empty": 1,
+   "fieldname": "indicator_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Indicator No"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "IND-"
+  },
+  {
+   "fieldname": "men_",
+   "fieldtype": "Int",
+   "label": "Men_"
+  },
+  {
+   "fieldname": "women_",
+   "fieldtype": "Int",
+   "label": "Women_"
+  },
+  {
+   "fieldname": "boys_",
+   "fieldtype": "Int",
+   "label": "Boys_"
+  },
+  {
+   "fieldname": "girls_",
+   "fieldtype": "Int",
+   "label": "Girls_"
+  },
+  {
+   "fieldname": "unclassified_",
+   "fieldtype": "Int",
+   "label": "Unclassified_"
+  },
+  {
+   "fieldname": "total_",
+   "fieldtype": "Int",
+   "label": "Total_"
+  },
+  {
+   "default": "0",
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-07-03 21:58:47.305589",
+ "modified_by": "Administrator",
+ "module": "Programs Management",
+ "name": "Project Indicator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

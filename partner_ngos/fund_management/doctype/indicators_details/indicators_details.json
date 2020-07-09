@@ -1,0 +1,41 @@
+{
+ "creation": "2020-06-25 13:12:30.324068",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "indicator_id",
+  "column_break_2",
+  "indicator"
+ ],
+ "fields": [
+  {
+   "fieldname": "indicator_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Indicator Id",
+   "options": "Indicators"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Indicator"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-25 13:12:30.324068",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Indicators Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

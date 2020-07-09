@@ -1,0 +1,35 @@
+{
+ "creation": "2020-06-21 22:08:21.564096",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program",
+  "percent"
+ ],
+ "fields": [
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program",
+   "options": "Programs"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Percent"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-21 22:29:49.067994",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Targeted Programs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

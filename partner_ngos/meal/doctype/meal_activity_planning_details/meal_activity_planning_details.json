@@ -1,0 +1,55 @@
+{
+ "creation": "2020-07-03 09:11:57.446291",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meal_activities_events",
+  "timing",
+  "responsibilities",
+  "estimated_budget"
+ ],
+ "fields": [
+  {
+   "fieldname": "meal_activities_events",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MEAL Activities / Events",
+   "options": "MEAL Activities",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timing",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Timing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "responsibilities",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsibilities ",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estimated_budget",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Estimated Budget",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-03 09:11:57.446291",
+ "modified_by": "Administrator",
+ "module": "MEAL",
+ "name": "MEAL Activity Planning Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

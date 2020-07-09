@@ -1,0 +1,74 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-25 13:18:19.839409",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "outcome_no",
+  "outcome",
+  "column_break_3",
+  "logical_framework"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "OC-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "logical_framework",
+   "fieldtype": "Link",
+   "label": "Logical Framework",
+   "options": "Logical Framework"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "outcome_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Outcome No",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "[Outcome :  ]",
+   "fieldname": "outcome",
+   "fieldtype": "Small Text",
+   "label": "Outcome",
+   "reqd": 1
+  }
+ ],
+ "modified": "2020-07-04 01:41:40.796138",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Outcomes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,101 @@
+{
+ "autoname": "field:assessment_name",
+ "creation": "2020-06-22 15:32:21.166713",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_name",
+  "project",
+  "project_name",
+  "project_type",
+  "column_break_5",
+  "expected_start_date",
+  "expected_end_date",
+  "stakeholder_assessment_section",
+  "stakeholder_assessment_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_type",
+   "fieldname": "project_type",
+   "fieldtype": "Data",
+   "label": "Project Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.expected_start_date",
+   "fieldname": "expected_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.expected_end_date",
+   "fieldname": "expected_end_date",
+   "fieldtype": "Data",
+   "label": "Expected End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stakeholder_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "Stakeholder Assessment"
+  },
+  {
+   "fieldname": "stakeholder_assessment_details",
+   "fieldtype": "Table",
+   "label": "Stakeholder Assessment Details",
+   "options": "Stakeholder Assessment Details"
+  }
+ ],
+ "modified": "2020-07-03 23:16:31.088815",
+ "modified_by": "Administrator",
+ "module": "Programs Management",
+ "name": "Stakeholder Assessment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

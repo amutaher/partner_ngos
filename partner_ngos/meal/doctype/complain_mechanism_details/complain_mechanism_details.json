@@ -1,0 +1,70 @@
+{
+ "creation": "2020-07-03 07:12:11.894987",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_complainant",
+  "complainant_gender",
+  "type",
+  "mechanism_used",
+  "other_mechanism_used",
+  "contact_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_complainant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Complainant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "complainant_gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Complainant Gender",
+   "options": "\nMale\nFamale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mechanism_used",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mechanism Used",
+   "options": "\nCall Phone\nSMS Message\nComplaints Box\nCome to Foundation\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Contact No."
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "IDPs\nHousehold"
+  },
+  {
+   "depends_on": "eval:doc.mechanism_used=='Other';",
+   "fieldname": "other_mechanism_used",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Other Mechanism Used"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-03 09:14:17.690932",
+ "modified_by": "Administrator",
+ "module": "MEAL",
+ "name": "Complain Mechanism Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

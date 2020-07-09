@@ -1,0 +1,41 @@
+{
+ "creation": "2020-06-25 13:14:25.863271",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_id",
+  "column_break_2",
+  "activity"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity Id",
+   "options": "Activity"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-25 13:14:25.863271",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Activities Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

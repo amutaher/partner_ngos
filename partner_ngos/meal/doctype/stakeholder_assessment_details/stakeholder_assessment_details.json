@@ -1,0 +1,61 @@
+{
+ "creation": "2020-07-03 08:46:44.734917",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "who",
+  "what",
+  "why",
+  "when",
+  "how"
+ ],
+ "fields": [
+  {
+   "fieldname": "who",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Who",
+   "options": "Who Appreciate Stakeholder",
+   "reqd": 1
+  },
+  {
+   "fieldname": "what",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "What",
+   "reqd": 1
+  },
+  {
+   "fieldname": "why",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Why"
+  },
+  {
+   "fieldname": "when",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "When"
+  },
+  {
+   "fieldname": "how",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "How",
+   "options": "Employee",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-03 09:15:02.826269",
+ "modified_by": "Administrator",
+ "module": "MEAL",
+ "name": "Stakeholder Assessment Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

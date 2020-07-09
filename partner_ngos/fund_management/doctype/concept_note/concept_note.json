@@ -1,0 +1,133 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-06-21 20:48:46.324949",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "concept_note_writer",
+  "writer_name",
+  "project_title",
+  "column_break_5",
+  "status",
+  "project_duration",
+  "deadline",
+  "section_break_9",
+  "introduction_background",
+  "section_break_11",
+  "goals_objectives",
+  "section_break_13",
+  "expected_results",
+  "section_break_15",
+  "innovation"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CN-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "concept_note_writer",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Concept Note Writer",
+   "options": "User"
+  },
+  {
+   "fetch_from": "concept_note_writer.full_name",
+   "fieldname": "writer_name",
+   "fieldtype": "Data",
+   "label": "Writer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Small Text",
+   "label": "Project Title"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nApproved"
+  },
+  {
+   "fieldname": "project_duration",
+   "fieldtype": "Data",
+   "label": "Project Duration"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "introduction_background",
+   "fieldtype": "Text Editor",
+   "label": "Introduction / Background"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "goals_objectives",
+   "fieldtype": "Text Editor",
+   "label": "Goals & Objectives"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expected_results",
+   "fieldtype": "Text Editor",
+   "label": "Expected Results"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "innovation",
+   "fieldtype": "Text Editor",
+   "label": "Innovation"
+  }
+ ],
+ "modified": "2020-06-22 09:08:01.770161",
+ "modified_by": "Administrator",
+ "module": "Fund Management",
+ "name": "Concept Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

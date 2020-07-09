@@ -1,0 +1,233 @@
+{
+ "autoname": "field:type_of_problem",
+ "creation": "2020-06-22 15:34:56.302640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "complain_status",
+  "section_break_1",
+  "project",
+  "project_name",
+  "project_type",
+  "column_break_5",
+  "activity_type",
+  "expected_start_date",
+  "expected_end_date",
+  "complain_mechanism_details_section",
+  "date_complaint_received",
+  "complaint_end_date",
+  "complain_mechanism_details",
+  "section_break_11",
+  "district",
+  "column_break_13",
+  "village",
+  "column_break_15",
+  "municipality",
+  "section_break_17",
+  "type_of_problem",
+  "description_of_complaint",
+  "person_complaint_referred_to",
+  "section_break_21",
+  "description_of_investigation_and_resolution_process",
+  "description_of_resolution",
+  "decision_maker",
+  "feedback",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_type",
+   "fieldname": "project_type",
+   "fieldtype": "Data",
+   "label": "Project Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.expected_start_date",
+   "fieldname": "expected_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Start Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.expected_end_date",
+   "fieldname": "expected_end_date",
+   "fieldtype": "Data",
+   "label": "Expected End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Data",
+   "label": "Activity Type"
+  },
+  {
+   "fieldname": "complain_mechanism_details_section",
+   "fieldtype": "Section Break",
+   "label": "Complain Mechanism Details"
+  },
+  {
+   "fieldname": "complain_mechanism_details",
+   "fieldtype": "Table",
+   "label": "Complain Mechanism Details",
+   "options": "Complain Mechanism Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "municipality",
+   "fieldtype": "Data",
+   "label": "Municipality"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Problem Detail"
+  },
+  {
+   "fieldname": "type_of_problem",
+   "fieldtype": "Data",
+   "label": "Type of Problem",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description_of_complaint",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description of Complaint ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "person_complaint_referred_to",
+   "fieldtype": "Select",
+   "label": "Person Complaint Referred to",
+   "options": "CFW TL\nPHE TL\nPHP TL\nMEAL Team"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break",
+   "label": "Dealing with Problem"
+  },
+  {
+   "fieldname": "description_of_investigation_and_resolution_process",
+   "fieldtype": "Small Text",
+   "label": "Description of Investigation and Resolution Process"
+  },
+  {
+   "fieldname": "description_of_resolution",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description of Resolution",
+   "reqd": 1
+  },
+  {
+   "fieldname": "decision_maker",
+   "fieldtype": "Link",
+   "label": "Decision Maker (Deal with the Problem)",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "date_complaint_received",
+   "fieldtype": "Datetime",
+   "label": "Date Complaint Received",
+   "reqd": 1
+  },
+  {
+   "fieldname": "complaint_end_date",
+   "fieldtype": "Datetime",
+   "label": "Complaint End Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Complain Mechanism",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "complain_status",
+   "fieldtype": "Select",
+   "label": "Complain Status",
+   "options": "Draft\nCompleted\nNot finished"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-07-03 09:25:23.599437",
+ "modified_by": "Administrator",
+ "module": "MEAL",
+ "name": "Complain Mechanism",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
